@@ -23,7 +23,7 @@ class FuncionarioController extends Controller
     public function create()
     {
         return view('funcionarios.create');
-    }
+    }  
 
     public function store(Request $request)
     {

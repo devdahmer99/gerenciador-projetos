@@ -18,7 +18,7 @@ class ClientController extends Controller
 
     public function show(int $id): View
     {
-        $client = Client::find($id);
+        $client = Client::findorFail($id);
 
         return view('clients.show', ['client' => $client]);
     }
